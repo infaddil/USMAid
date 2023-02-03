@@ -9,9 +9,14 @@ const Hero = () => {
   return (
     <div className="min-w-[1280px] flex justify-between pl-6 py-10">
       <div className="flex flex-col gap-y-8">
-        <div className="flex flex-col mt-[90px]">
-            <span className="text-7xl font-bold">Unite to help each </span>
+        <div className="flex flex-col  mt-[90px]">
+          <span className="text-7xl font-bold">Unite to help each </span>
+          <div className="flex justify-between">
             <span className="text-7xl font-bold">other</span>
+            <div>
+              <Image src={flag} width={96} height={82} />
+            </div>
+          </div>
         </div>
         <div className="text-lg flex flex-col">
           <span>
@@ -20,7 +25,7 @@ const Hero = () => {
           </span>
           <span>Stay strong & safe! We take care of Malaysia ✊</span>
         </div>
-        <Button className="bg-black text-white py-2.5">
+        <Button className="bg-[#CE3245] hover:bg-black text-white py-3 text-md">
           Open the Kitajaga Map <ForwardArrowIcon />
         </Button>
       </div>
