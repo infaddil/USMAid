@@ -4,11 +4,12 @@ import Link from "next/link";
 import React from "react";
 import HeroImage from "../../assets/images/kitajaga-hero-image.jpg";
 import flag from "../../assets/images/whiteflag.png";
+import Layout from "../Layout/Layout";
 import Button from "../UI/Button";
 
 const Hero = () => {
   return (
-    <>
+    <Layout>
       <div className="w-full xl:min-w-[1280px] flex flex-col xl:flex-row xl:justify-between items-center xl:gap-x-2 px-10 md:px-6 xl:px-0 xl:pl-6 py-10 xl:mt-[10px]">
         <div className="flex flex-col gap-y-8">
           <div className="sm:flex flex-row items-center gap-x-4 xl:mt-[90px]">
@@ -40,10 +41,11 @@ const Hero = () => {
               />
             </div>
           </div>
-
+            <Link href="/map">
           <Button className="bg-black hover:bg-[#CE3245] text-white px-4  py-3 text-md w-full md:w-fit">
             Open the Kitajaga Map <ForwardArrowIcon />
           </Button>
+          </Link>
         </div>
         <div>
           <Image
@@ -54,32 +56,8 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="w-full fixed bottom-0 p-2 bg-white shadow-sm">
-        <div className="flex justify-between px-2">
-          <div className="flex gap-x-2">
-            <Link href="/support">
-            <Button className="bg-[#FFEF85] text-black px-3 text-xs font-bold py-1">
-              🙏🏻 &nbsp;Support kitajaga.co
-            </Button>
-            </Link>
-            <Button className="bg-[#26BD62] text-white px-3 text-xs font-bold py-1">
-              🕵🏻 &nbsp; Check No. Phone
-            </Button>
-          </div>
-          <div className="flex gap-x-2">
-            <Button className="bg-[#F1F2F4] text-black px-3 text-xs font-bold">
-              Blog
-            </Button>
-            <Button className="bg-[#F1F2F4] text-black px-3 text-xs font-bold">
-              Contact
-            </Button>
-            <Button className="bg-[#F1F2F4] text-black px-3 text-xs font-bold">
-              About us
-            </Button>
-          </div>
-        </div>
-      </div>
-    </>
+  
+    </Layout>
   );
 };
 

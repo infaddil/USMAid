@@ -28,6 +28,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.map-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
