@@ -18,14 +18,14 @@ const Map = () => {
   return (
     <Layout>
       <GoogleMap
-        zoom={10}
+        zoom={15}
         center={{ lat: 44, lng: -80 }}
         mapContainerClassName="map-container"
         options={{ disableDefaultUI: true }}
       >
-        {isShowModal && <PopupModal setIsShowModal={setIsShowModal} />}
         <MapHeader />
         <MapFooter />
+        {isShowModal && <PopupModal setIsShowModal={setIsShowModal} />}
       </GoogleMap>
     </Layout>
   );

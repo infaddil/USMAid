@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "../../styles/Button.module.css";
 
-const Button = ({children,className, onClick}) => {
+const Button = ({children,className,name,onClick}) => {
   return (
-    <button className={`flex  items-center border justify-center rounded-full font-bold border-transparent  ${className}`} onClick={onClick}>
+    <button className={`flex  items-center border justify-center rounded-full font-bold border-transparent transition-all ${name=="campaign" ? styles.campaignBtn: styles.button } ${className}`} onClick={onClick}>
       {children}
     </button>
   );

@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const PopupModal = ({setIsShowModal}) => {
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-[#7F7F7F] bg-opacity-75 absolute">
+    <div className="w-full h-screen flex justify-center items-center bg-black bg-opacity-50 absolute">
       <div className="flex flex-col gap-y-6 justify-center items-center border rounded-[32px] w-[440px] bg-white px-8 py-7 shadow-lg">
         <div className="flex">
           <div>
