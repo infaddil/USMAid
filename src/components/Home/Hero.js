@@ -1,5 +1,6 @@
 import ForwardArrowIcon from "@/assets/icons/ForwardArrowIcon";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import HeroImage from "../../assets/images/kitajaga-hero-image.jpg";
 import flag from "../../assets/images/whiteflag.png";
@@ -7,32 +8,78 @@ import Button from "../UI/Button";
 
 const Hero = () => {
   return (
-    <div className="min-w-[1280px] flex justify-between pl-6 py-10">
-      <div className="flex flex-col gap-y-8">
-        <div className="flex flex-col  mt-[90px]">
-          <span className="text-7xl font-bold">Unite to help each </span>
-          <div className="flex justify-between">
-            <span className="text-7xl font-bold">other</span>
-            <div>
-              <Image src={flag} width={96} height={82} />
+    <>
+      <div className="w-full xl:min-w-[1280px] flex flex-col xl:flex-row xl:justify-between items-center xl:gap-x-2 px-10 md:px-6 xl:px-0 xl:pl-6 py-10 xl:mt-[10px]">
+        <div className="flex flex-col gap-y-8">
+          <div className="sm:flex flex-row items-center gap-x-4 xl:mt-[90px]">
+            <div className="flex flex-col gap-y-4 ">
+              <div className="flex">
+                <span className="text-3xl md:text-4xl xl:text-7xl font-bold">
+                  Unite to help each other
+                </span>
+                <div className="sm:hidden">
+                  <Image
+                    src={flag}
+                    width={0}
+                    height={0}
+                    className="w-f ull md: min-w-[96px] md: min-h-[82]"
+                  />
+                </div>
+              </div>
+              <span>
+                Start small, help one flag a day and together we make Malaysia
+                more harmonious. Stay strong & safe! We take care of Malaysia ✊
+              </span>
+            </div>
+            <div className="hidden sm:block">
+              <Image
+                src={flag}
+                width={0}
+                height={0}
+                className="w-f ull md: min-w-[96px] md: min-h-[82]"
+              />
             </div>
           </div>
+
+          <Button className="bg-black hover:bg-[#CE3245] text-white px-4  py-3 text-md w-full md:w-fit">
+            Open the Kitajaga Map <ForwardArrowIcon />
+          </Button>
         </div>
-        <div className="text-lg flex flex-col">
-          <span>
-            Start small, help one flag a day and together we make Malaysia more
-            harmonious.
-          </span>
-          <span>Stay strong & safe! We take care of Malaysia ✊</span>
+        <div>
+          <Image
+            src={HeroImage}
+            width={0}
+            height={0}
+            className="w-full xl:min-w-[768px] xl:min-h-[542px]"
+          />
         </div>
-        <Button className="bg-[#CE3245] hover:bg-black text-white py-3 text-md">
-          Open the Kitajaga Map <ForwardArrowIcon />
-        </Button>
       </div>
-      <div>
-        <Image src={HeroImage} width={768} height={542} />
+      <div className="w-full fixed bottom-0 p-2 bg-white shadow-sm">
+        <div className="flex justify-between px-2">
+          <div className="flex gap-x-2">
+            <Link href="/support">
+            <Button className="bg-[#FFEF85] text-black px-3 text-xs font-bold py-1">
+              🙏🏻 &nbsp;Support kitajaga.co
+            </Button>
+            </Link>
+            <Button className="bg-[#26BD62] text-white px-3 text-xs font-bold py-1">
+              🕵🏻 &nbsp; Check No. Phone
+            </Button>
+          </div>
+          <div className="flex gap-x-2">
+            <Button className="bg-[#F1F2F4] text-black px-3 text-xs font-bold">
+              Blog
+            </Button>
+            <Button className="bg-[#F1F2F4] text-black px-3 text-xs font-bold">
+              Contact
+            </Button>
+            <Button className="bg-[#F1F2F4] text-black px-3 text-xs font-bold">
+              About us
+            </Button>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
