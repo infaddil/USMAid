@@ -47,7 +47,7 @@ const MapHeader = ({
             onClick={() => setIsSearch(!isSearch)}
           >
             <i
-              class={`fa-sharp fa-solid fa-sort text-lg ${
+              className={`fa-sharp fa-solid fa-sort text-lg ${
                 isSearch ? "text-white" : "text-black"
               }`}
             ></i>

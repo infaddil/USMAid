@@ -1,8 +1,7 @@
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import React from "react";
 
-const MapUI = ({className , children}) => {
-  console.log(className)
+const MapUI = ({ className, children }) => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyBPqAkXpoMXnqpkhQiBXImC5EB8R-Cgli8",
   });

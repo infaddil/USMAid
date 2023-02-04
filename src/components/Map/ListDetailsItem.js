@@ -11,7 +11,7 @@ const ListDetailsItem = ({ data,setLoginModal }) => {
         <div className="flex justify-between items-center">
           <span className="text-xs text-gray-500">{data.location}</span>
           <Button className="shadow-2xl h-8 w-8 bg-white p-1 px-2 rounded-full ">
-            <i class="fa-solid fa-location-dot text-lg text-center "></i>
+            <i className="fa-solid fa-location-dot text-lg text-center "></i>
           </Button>
         </div>
         <div className="bg-gray-100 p-1.5 rounded-[4px]">

@@ -14,7 +14,7 @@ const ListItem = ({ data,setDetails }) => {
         <div className="flex items-center">
           <h1 className="text-sm">Need help</h1>
           <div>
-            <Image src={flag} width={20} height={20} />
+            <Image src={flag} width={20} height={20} alt="img"/>
           </div>
         </div>
         <span>{data.distance}Km</span>

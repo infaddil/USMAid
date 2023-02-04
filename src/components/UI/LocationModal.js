@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "./Button";
+import flag1 from "../../assets/images/icon-help-cadbury.png"
+import flag2 from "../../assets/images/icon-helper-cadbury.png"
 
 const LocationModal = ({setLocationModal}) => {
   return (
@@ -10,7 +12,7 @@ const LocationModal = ({setLocationModal}) => {
         <div className="flex">
           <div>
             <Image
-              src="https://terato-space.sgp1.digitaloceanspaces.com/kitajaga/img/icon-help-cadbury.png"
+              src={flag1}
               width={80}
               height={88}
               alt="img"
@@ -18,7 +20,7 @@ const LocationModal = ({setLocationModal}) => {
           </div>
           <div>
             <Image
-              src="https://terato-space.sgp1.digitaloceanspaces.com/kitajaga/img/icon-helper-cadbury.png"
+              src={flag2}
               width={80}
               height={88}
               alt="img"

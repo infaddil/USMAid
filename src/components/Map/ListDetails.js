@@ -18,7 +18,7 @@ const ListDetails = ({ data, setDetails,setLoginModal }) => {
         <div className="flex items-center">
           <h1 className="text-lg font-bold">Need help</h1>
           <div>
-            <Image src={flag} width={35} height={35} />
+            <Image src={flag} width={35} height={35} alt="img" />
           </div>
         </div>
       </div>

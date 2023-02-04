@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 
 const Input = () => {
-  return (
+return (
     <div className="px-7 py-6">
       <div className="relative">
         <div className="absolute top-2.5 left-3 flex  items-center gap-x-1 cursor-pointer">

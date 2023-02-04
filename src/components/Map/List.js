@@ -21,7 +21,7 @@ const List = ({data,setDetails}) => {
         >
           I need help
           <div>
-            <Image src={flag} width={22} height={22} />
+            <Image src={flag} width={22} height={22} alt="img" />
           </div>
         </Button>
         <Button
@@ -43,7 +43,7 @@ const List = ({data,setDetails}) => {
       {!isNeedHelp && (
         <div className="flex flex-col mt-10 justify-center items-center">
           <div>
-            <Image src={img} width={320} height={150} />
+            <Image src={img} width={320} height={150} alt="img" />
           </div>
           <span className="font-bold text-base">No data found</span>
         </div>

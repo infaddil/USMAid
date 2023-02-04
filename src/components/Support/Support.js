@@ -12,7 +12,7 @@ const Support = () => {
         <span className="font-bold text-lg">Support kitajaga.co</span>
         <Link href={"/"}>
           <Button className="bg-[#1C4BA9] text-xl justify-center text-white h-10 w-10 shadow-lg">
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i className="fa fa-times" aria-hidden="true"></i>
           </Button>
         </Link>
       </div>
@@ -24,6 +24,7 @@ const Support = () => {
                 src="https://terato-space.sgp1.digitaloceanspaces.com/kitajaga/kitajaga-small-logo-only.svg"
                 width={120}
                 height={120}
+                alt="img"
               />
             </div>
             <h1 className="text-5xl font-bold text-[#1C4BA9]">kitajaga</h1>

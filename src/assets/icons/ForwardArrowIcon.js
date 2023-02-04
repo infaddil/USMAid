@@ -8,7 +8,7 @@ const ForwardArrowIcon = () => {
       viewBox="0 0 24 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      class="icon ml-1"
+      className="icon ml-1"
       data-v-efc3312a=""
     >
       <path

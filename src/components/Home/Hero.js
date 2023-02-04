@@ -20,6 +20,7 @@ const Hero = () => {
                 </span>
                 <div className="sm:hidden">
                   <Image
+                    alt="img"
                     src={flag}
                     width={0}
                     height={0}
@@ -34,6 +35,7 @@ const Hero = () => {
             </div>
             <div className="hidden sm:block">
               <Image
+                alt="img"
                 src={flag}
                 width={0}
                 height={0}
@@ -41,7 +43,7 @@ const Hero = () => {
               />
             </div>
           </div>
-          <Link href="/map" className="w-fit" >
+          <Link href="/map" className="w-fit">
             <Button className="bg-black hover:bg-[#CE3245] text-white px-4 py-3 text-md ">
               Open the Kitajaga Map <ForwardArrowIcon />
             </Button>
@@ -49,6 +51,7 @@ const Hero = () => {
         </div>
         <div>
           <Image
+            alt="img"
             src={HeroImage}
             width={0}
             height={0}
