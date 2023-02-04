@@ -41,10 +41,10 @@ const Hero = () => {
               />
             </div>
           </div>
-            <Link href="/map">
-          <Button className="bg-black hover:bg-[#CE3245] text-white px-4  py-3 text-md w-full md:w-fit">
-            Open the Kitajaga Map <ForwardArrowIcon />
-          </Button>
+          <Link href="/map" className="w-fit" >
+            <Button className="bg-black hover:bg-[#CE3245] text-white px-4 py-3 text-md ">
+              Open the Kitajaga Map <ForwardArrowIcon />
+            </Button>
           </Link>
         </div>
         <div>
@@ -56,7 +56,6 @@ const Hero = () => {
           />
         </div>
       </div>
-  
     </Layout>
   );
 };

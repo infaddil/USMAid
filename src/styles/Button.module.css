@@ -1,5 +1,6 @@
 .button:active {
   animation: zoom-in-zoom-out 2s ease;
+  outline: 0;
 }
 .campaignBtn {
   animation: 1s ease-out 0s 5 slideFromTop;

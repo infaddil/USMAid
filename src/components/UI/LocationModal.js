@@ -3,9 +3,9 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import Button from "./Button";
 
-const PopupModal = ({setIsShowModal}) => {
+const LocationModal = ({setLocationModal}) => {
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-black bg-opacity-50 absolute">
+    <div className="w-full h-screen flex justify-center items-center bg-black bg-opacity-50 absolute z-[22]">
       <div className="flex flex-col gap-y-6 justify-center items-center border rounded-[32px] w-[440px] bg-white px-8 py-7 shadow-lg">
         <div className="flex">
           <div>
@@ -34,10 +34,10 @@ const PopupModal = ({setIsShowModal}) => {
         <Link href={"#"} className="text-[#39005F] font-extrabold underline text-sm">
           Click here for a tutorial on how to enable location
         </Link>
-        <Button className="border-[#cccccc] w-full py-3 hover:bg-black hover:text-white" onClick={() => setIsShowModal(false)}>I agree</Button>
+        <Button className="border-[#cccccc] w-full py-3 hover:bg-black hover:text-white" onClick={() => setLocationModal(false)}>I agree</Button>
       </div>
     </div>
   );
 };
 
-export default PopupModal;
+export default LocationModal;

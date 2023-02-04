@@ -2,12 +2,21 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import Button from "../UI/Button";
 
-const MapHeader = () => {
+const MapHeader = ({
+  isSearch,
+  setIsSearch,
+  setLoginModal,
+  openDrawer,
+  setOpenDrawer,
+}) => {
   return (
     <div className="w-full absolute top-5 px-6 ">
       <div className="flex justify-between">
         <div className="flex gap-x-2">
-          <Button className="bg-white shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold" name="campaign">
+          <Button
+            className="bg-white shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold"
+            name="campaign"
+          >
             <div className="flex justify-center items-center">
               <div>
                 <Image
@@ -19,7 +28,10 @@ const MapHeader = () => {
               <span> kitajaga campaign</span>
             </div>
           </Button>
-          <Button className="bg-white shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold gap-x-2">
+          <Button
+            className="bg-white shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold gap-x-2"
+            onClick={() => setLoginModal(true)}
+          >
             <i className="fa fa-user text-lg" aria-hidden="true"></i>
             Profile
           </Button>
@@ -28,11 +40,26 @@ const MapHeader = () => {
           <Button className="shadow-2xl w-fit px-3 py-1.5 text-sm  font-extrabold bg-black">
             <i className="fa-brands text-xl text-white fa-rocketchat"></i>
           </Button>
-          <Button className="bg-black shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold gap-x-2 text-white">
-          <i class="fa-sharp fa-solid fa-sort text-lg text-white"></i>Search
+          <Button
+            className={`${
+              isSearch ? "bg-black text-white" : "bg-white text-black"
+            } shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold gap-x-2 `}
+            onClick={() => setIsSearch(!isSearch)}
+          >
+            <i
+              class={`fa-sharp fa-solid fa-sort text-lg ${
+                isSearch ? "text-white" : "text-black"
+              }`}
+            ></i>
+            Search
           </Button>
-          <Button className="shadow-2xl w-fit px-3 py-1.5 text-sm  font-extrabold bg-black">
-            <i className="fa-solid text-xl text-white fa-bars"></i>
+          <Button
+            className={`shadow-2xl w-fit px-3 py-1.5 text-sm  font-extrabold ${
+              openDrawer ? "bg-black text-white" : "bg-white text-black"
+            } `}
+            onClick={() => setOpenDrawer(!openDrawer)}
+          >
+            <i className="fa-solid text-xl fa-bars"></i>
           </Button>
         </div>
       </div>
