@@ -5,7 +5,7 @@ import Button from "../UI/Button";
 
 const Navbar = () => {
   return (
-    <div className="w-[100%] xl:min-w-[1280px] flex justify-between  px-10 md:px-32  xl:px-6 py-10">
+    <div className="w-[100%] xl:min-w-[1280px] flex justify-between px-10 md:px-6  xl:px-6 py-10 ">
       <Link href={"/"}  className="hidden md:block">
         <Image
           src="https://terato-space.sgp1.digitaloceanspaces.com/kitajaga/kitajaga-logo-horizontal.svg"
@@ -39,7 +39,7 @@ const Navbar = () => {
               alt="img"
             />
           </div>
-          <div className="text-md">Create Compaign</div>
+          <div className="text-md ">Create Compaign</div>
         </Button>
       </div>
 

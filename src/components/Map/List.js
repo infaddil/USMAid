@@ -16,7 +16,7 @@ const List = ({data,setDetails}) => {
         <Button
           className={`${
             isNeedHelp ? "bg-black" : "bg-[#DDDDDD]"
-          } xl:text-sm lg:text-xs lg:px-1 2xl:px-4 w-full text-white py-2 hover:shadow-md`}
+          } xl:text-sm lg:text-xs lg:px-1 2xl:px-4 w-full text-sm text-white py-2 hover:shadow-md`}
           onClick={() => setIsNeedHelp(true)}
         >
           I need help
@@ -27,7 +27,7 @@ const List = ({data,setDetails}) => {
         <Button
           className={`${
             isNeedHelp ?"bg-[#DDDDDD]" : "bg-black"
-          } xl:text-sm lg:text-xs lg:px-1 2xl:px-4 w-full text-white py-2 hover:shadow-md`}
+          } xl:text-sm lg:text-xs lg:px-1 2xl:px-4 w-full text-sm text-white py-2 hover:shadow-md`}
           onClick={() => setIsNeedHelp(false)}
         >
           I want to help 🍱

@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
           <Link href="/map" className="w-fit">
-            <Button className="bg-black hover:bg-[#CE3245] text-white px-4 py-3 text-md ">
+            <Button className="bg-black hover:bg-[#CE3245] text-white px-4 py-3 text-md mb-10">
               Open the Kitajaga Map <ForwardArrowIcon />
             </Button>
           </Link>
@@ -55,7 +55,7 @@ const Hero = () => {
             src={HeroImage}
             width={0}
             height={0}
-            className="w-full xl:min-w-[768px] xl:min-h-[542px]"
+            className="w-full md:min-w-[768px] md:min-h-[542px] mb-10"
           />
         </div>
       </div>

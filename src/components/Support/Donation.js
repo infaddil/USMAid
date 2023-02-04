@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 
 const Donation = () => {
   return (
-    <div className="flex flex-col gap-y-6 justify-center items-center mt-[100px]">
+    <div className="flex flex-col gap-y-6 justify-center items-center mt-[20px] md:mt-[100px]">
       <span className="text-lg font-semibold">Select Donation Method</span>
       <Button className="bg-black hover:bg-[#1C4BA9] text-white py-3 px-7 text-base w-[320px] justify-center">
         Support us on GlobalSadaqah
@@ -16,7 +16,7 @@ const Donation = () => {
         Donate With Ether (ETH)
       </Button>
       <Link href={"#"}>
-        <span className="font-semibold text-sm underline">Management of Kitajaga Crypto Fund</span>
+        <span className="font-semibold text-sm underline pb-10">Management of Kitajaga Crypto Fund</span>
       </Link>
     </div>
   );
