@@ -17,8 +17,12 @@ const map = () => {
 
   return (
     <Layout>
-      <div className="flex justify-between w-full">
-        <div className={`${!openDrawer ? "w-[100%]" : "w-[75%]"}`}>
+      <div className="flex justify-between w-full  h-screen">
+        <div
+          className={`${
+            !openDrawer ? "w-full cursor-pointer " : "w-full md:w-2/3 lg:w-3/4 cursor-pointer"
+          }`}
+        >
           <MapUI className="map-container">
             {!details && (
               <MapHeader
@@ -35,7 +39,7 @@ const map = () => {
         {locationModal && <LocationModal setLocationModal={setLocationModal} />}
         {loginModal && <LoginModal setLoginModal={setLoginModal} />}
         {openDrawer && (
-          <div className="w-[25%]">
+          <div className="hidden md:block w-1/3 lg:w-1/4">
             <RightSideDrawer
               isSearch={isSearch}
               setIsSearch={setIsSearch}

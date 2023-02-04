@@ -11,14 +11,14 @@
   }
 }
 .closeSlideAnimation {
-    animation: 0.2s ease-out slideFromLeft;
+  animation: 0.2s ease-out slideFromLeft;
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(0%);
   }
-  @keyframes slideFromLeft {
-    0% {
-      transform: translateX(0%);
-    }
-  
-    100% {
-      transform: translateX(100%);
-    }
+
+  100% {
+    transform: translateX(100%);
   }
+}

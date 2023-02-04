@@ -25,7 +25,7 @@ const ListItem = ({ data,setDetails }) => {
           {data.text.substring(0, 132)}...
         </span>
       </div>
-      <div className="flex  gap-x-2 gap-y-2 flex-wrap">
+      <div className="flex  gap-x-2 gap-y-2 flex-wrap mb-32">
         {data.tags.map((tag) => {
           return (
             <div key={tag.id}>

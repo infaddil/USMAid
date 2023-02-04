@@ -48,9 +48,9 @@ const Search = ({ setIsSearch }) => {
         </Button>
         <span className="text-lg font-bold">Search</span>
       </div>
-      <div className="flex flex-col gap-y-2">
+      <div className="flex flex-col  gap-y-2">
         <span className="text-base font-bold">Search radius (kilometers)</span>
-        <div className="flex gap-x-2">
+        <div className="flex flex-wrap gap-y-2 gap-x-2">
           <Button
             className={`${
               activeBtn.btn1 ? "bg-black text-white" : "bg-[#DDDDDD] text-white"
@@ -101,7 +101,7 @@ const Search = ({ setIsSearch }) => {
         Find
       </Button>
       <Button
-        className="bg-white text-black hover:bg-black hover:text-white p-2.5 px-2 rounded-full"
+        className="bg-white text-black hover:bg-black hover:text-white p-2.5 px-2 rounded-full mb-32"
         onClick={() => setIsSearch(false)}
       >
         Reset

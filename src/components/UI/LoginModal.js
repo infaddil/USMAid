@@ -6,8 +6,11 @@ import Button from "./Button";
 
 const LoginModal = ({ setLoginModal }) => {
   return (
-    <div className="w-full h-screen flex justify-start items-center bg-black bg-opacity-50 absolute z-[22]">
-      <div className="flex flex-col gap-y-3 border rounded-[32px] w-[368px] bg-white px-8 py-10 shadow-lg relative bottom-16 left-6">
+    <>
+
+    <div className="w-full h-screen flex justify-start bg-black bg-opacity-50 items-start absolute z-[22]  " >
+
+      <div className="flex flex-col gap-y-2 md:gap-y-3 border rounded-[32px]   w-full md:max-w-[368px] mx-4 md:mx-0  bg-white px-4 py-5 md:px-8 md:py-10 shadow-lg relative top-24 md:left-6">
         <div className="flex justify-end">
           <Button
             className="bg-white text-xl justify-end  text-white h-12 w-12 shadow-lg"
@@ -23,17 +26,17 @@ const LoginModal = ({ setLoginModal }) => {
           <Image
             src="https://terato-space.sgp1.digitaloceanspaces.com/kitajaga/kitajaga-small-logo-only.svg"
             width={60}
-            height={68}
+            height={68} 
             alt="img"
           />
         </div>
-        <h1 className="text-lg font-extrabold text-center">Login Kitajaga</h1>
+        <h1 className="text-sm md:text-lg font-extrabold text-center">Login Kitajaga</h1>
         <div>
           <span className="text-[#808080] font-bold text-sm">Phone number</span>
           <input
             type="text"
             placeholder="6013231321"
-            className="border rounded-full py-3 px-4  outline-[#1c4ba9] w-full"
+            className="border rounded-full py-2 px-2 md:py-3 md:px-4  outline-[#1c4ba9] w-full"
           />
         </div>
         <Button
@@ -50,6 +53,7 @@ const LoginModal = ({ setLoginModal }) => {
         </Button>
       </div>
     </div>
+    </>
   );
 };
 

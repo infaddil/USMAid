@@ -12,11 +12,11 @@ const List = ({data,setDetails}) => {
   return (
     <div className="flex flex-col gap-y-6 mt-6">
       <h1 className="font-extrabold text-lg px-7">Nearby List</h1>
-      <div className="flex items-center gap-x-2 px-7">
+      <div className="flex flex-col gap-y-2 lg:flex-row items-center  gap-x-2 px-3 xl:px-7">
         <Button
           className={`${
             isNeedHelp ? "bg-black" : "bg-[#DDDDDD]"
-          } text-sm px-4 text-white py-2 hover:shadow-md`}
+          } xl:text-sm lg:text-xs lg:px-1 2xl:px-4 w-full text-white py-2 hover:shadow-md`}
           onClick={() => setIsNeedHelp(true)}
         >
           I need help
@@ -27,7 +27,7 @@ const List = ({data,setDetails}) => {
         <Button
           className={`${
             isNeedHelp ?"bg-[#DDDDDD]" : "bg-black"
-          } text-sm px-4 text-white py-2 hover:shadow-md`}
+          } xl:text-sm lg:text-xs lg:px-1 2xl:px-4 w-full text-white py-2 hover:shadow-md`}
           onClick={() => setIsNeedHelp(false)}
         >
           I want to help 🍱
@@ -45,7 +45,7 @@ const List = ({data,setDetails}) => {
           <div>
             <Image src={img} width={320} height={150} alt="img" />
           </div>
-          <span className="font-bold text-base">No data found</span>
+          <span className="font-bold text-base mb-32">No data found</span>
         </div>
       )}
     </div>
