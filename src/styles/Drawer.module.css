@@ -11,7 +11,7 @@
   }
 }
 .closeSlideAnimation {
-    animation: 0.5s ease-out slideFromLeft;
+    animation: 0.2s ease-out slideFromLeft;
   }
   @keyframes slideFromLeft {
     0% {

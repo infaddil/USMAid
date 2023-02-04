@@ -40,7 +40,7 @@ const map = () => {
               isSearch={isSearch}
               setIsSearch={setIsSearch}
               details={details}
-              openDrawer = {openDrawer}
+              openDrawer={openDrawer}
               setDetails={setDetails}
               setLoginModal={setLoginModal}
             />
