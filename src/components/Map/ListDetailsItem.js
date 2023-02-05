@@ -14,7 +14,7 @@ const ListDetailsItem = ({ data,setLoginModal }) => {
             <i className="fa-solid fa-location-dot text-lg text-center "></i>
           </Button>
         </div>
-        <div className="bg-gray-100 p-1.5 rounded-[4px]">
+        <div className="bg-gray-100 dark:bg-[#292929] p-1.5 rounded-[4px]">
           <span className="text-sm">{data.address}</span>
         </div>
         <span className="font-bold text-lg">{data.name}</span>
