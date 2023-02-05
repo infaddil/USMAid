@@ -33,8 +33,6 @@ const map = () => {
                 openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
                 setLoginModal={setLoginModal}
-                toggle={toggle}
-                setToggle={setToggle}
               />
             )}
             <MapFooter openDrawer={openDrawer} />
@@ -44,7 +42,7 @@ const map = () => {
         {locationModal && <LocationModal setLocationModal={setLocationModal} />}
         {loginModal && <LoginModal setLoginModal={setLoginModal} />}
         {openDrawer && (
-          <div className={` md:block md:w-1/3 lg:w-1/4`}>
+          <div className={`md:block md:w-1/3 lg:w-1/4`}>
             <RightSideDrawer
               isSearch={isSearch}
               setIsSearch={setIsSearch}

@@ -8,8 +8,6 @@ const MapHeader = ({
   setLoginModal,
   openDrawer,
   setOpenDrawer,
-  toggle,
-  setToggle
 }) => {
   return (
     <div className="w-full absolute top-5 px-3 lg:px-6 ">
@@ -60,7 +58,7 @@ const MapHeader = ({
             className={`shadow-2xl w-fit px-3 lg:px-4 py-1.5 text-xs lg:text-sm  font-extrabold ${
               openDrawer ? "bg-black text-white" : "bg-white text-black"
             } `}
-            onClick={() => {setOpenDrawer(!openDrawer), setToggle(!toggle)}}
+            onClick={() => {setOpenDrawer(!openDrawer)}}
           >
             <i className="fa-solid text-sm sm:text-xl fa-bars"></i>
           </Button>
