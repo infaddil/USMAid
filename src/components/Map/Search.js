@@ -24,19 +24,7 @@ const Search = ({ setIsSearch }) => {
     btn3: false,
     btn4: false,
   });
-  const [selectedCategory, setSelectedCategory] = useState({
-    c1: false,
-    c2: false,
-    c3: false,
-    c4: false,
-    c5: false,
-    c6: false,
-    c7: false,
-    c8: false,
-    c9: false,
-    c10: false,
-    c11: false,
-  });
+  const [selectedCategory, setSelectedCategory] = useState([]);
   return (
     <div className="px-7 flex flex-col gap-y-6">
       <div className="flex items-center gap-x-4">

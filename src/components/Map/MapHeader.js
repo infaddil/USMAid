@@ -45,7 +45,7 @@ const MapHeader = ({
             className={`${
               isSearch ? "bg-black text-white" : "bg-white text-black"
             } shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold gap-x-2 `}
-            onClick={() => {setIsSearch(!isSearch), setOpenDrawer(!openDrawer)}}
+            onClick={() => {setIsSearch(!isSearch), setOpenDrawer(true)}}
           >
             <i
               className={`fa-sharp fa-solid fa-sort text-sm sm:text-lg ${
@@ -58,7 +58,7 @@ const MapHeader = ({
             className={`shadow-2xl w-fit px-3 lg:px-4 py-1.5 text-xs lg:text-sm  font-extrabold ${
               openDrawer ? "bg-black text-white" : "bg-white text-black"
             } `}
-            onClick={() => {setOpenDrawer(!openDrawer)}}
+            onClick={() => {setOpenDrawer(!openDrawer), setIsSearch(false)}}
           >
             <i className="fa-solid text-sm sm:text-xl fa-bars"></i>
           </Button>

@@ -30,7 +30,7 @@ const DUMMY_DATA = [
 const RightSideDrawer = ({ isSearch, setIsSearch, details, setDetails, setLoginModal, openDrawer,setOpenDrawer }) => {
   return (
     
-    <div className={`md:${openDrawer ? styles.openSlideAnimation: styles.closeSlideAnimation } absolute right-0 top-0 py-4 w-full  md:w-1/3 lg:w-1/4 h-screen overflow-x-scroll`}>
+    <div className={`${openDrawer ? `${styles.openSlideAnimation}`: styles.closeSlideAnimation } absolute right-0 top-0 py-4 w-full  md:w-1/3 lg:w-1/4 h-screen overflow-x-scroll`}>
       <div>
       {!isSearch && !details && <Input setOpenDrawer={setOpenDrawer} />}
       {!isSearch && !details && (

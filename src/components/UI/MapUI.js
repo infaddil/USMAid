@@ -23,7 +23,7 @@ const MapUI = ({ className, children, setDetails, setOpenDrawer,openDrawer }) =>
             scaledSize: new window.google.maps.Size(70, 70),
           },
         }}
-        onClick={ () => {setDetails(true), setOpenDrawer(!openDrawer) }}
+        onClick={ () => {setDetails(true), setOpenDrawer(true) }}
       />
       {children}
     </GoogleMap>

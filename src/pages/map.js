@@ -6,7 +6,6 @@ import MapFooter from "@/components/Map/MapFooter";
 import RightSideDrawer from "@/components/UI/RightSideDrawer";
 import MapUI from "@/components/UI/MapUI";
 import LoginModal from "@/components/UI/LoginModal";
-import styles from "../styles/Drawer.module.css";
 
 const map = () => {
   const [locationModal, setLocationModal] = useState(true);
@@ -14,7 +13,6 @@ const map = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [isSearch, setIsSearch] = useState(false);
   const [details, setDetails] = useState(false);
-  const [toggle, setToggle] = useState(false);
 
   return (
     <Layout>
