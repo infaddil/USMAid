@@ -8,9 +8,9 @@ const LoginModal = ({ setLoginModal }) => {
   return (
     <>
 
-    <div className="w-full h-screen flex justify-start bg-black bg-opacity-50 items-start absolute z-[22]  " >
+    <div className="w-full h-screen flex justify-start dark:bg-[#292929] bg-black bg-opacity-50 items-start absolute z-[22]  " >
 
-      <div className="flex flex-col gap-y-2 md:gap-y-3 border rounded-[32px]   w-full md:max-w-[368px] mx-4 md:mx-0  bg-white px-4 py-5 md:px-8 md:py-10 shadow-lg relative top-24 md:left-6">
+      <div className="flex flex-col gap-y-2 md:gap-y-3 border rounded-[32px] dark:bg-[#292929]  w-full md:max-w-[368px] mx-4 md:mx-0  bg-white px-4 py-5 md:px-8 md:py-10 shadow-lg relative top-24 md:left-6">
         <div className="flex justify-end">
           <Button
             className="bg-white text-xl justify-end  text-white h-12 w-12 shadow-lg"

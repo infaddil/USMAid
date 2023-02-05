@@ -14,7 +14,7 @@ const Categories = ({ categories, selectedCategory, setSelectedCategory }) => {
     <div className="flex gap-x-2 gap-y-3 flex-wrap">
       {categories.map((category) => (
         <Button
-        className={` ${selectedCategory.includes(category.id) ? "bg-black text-white" : ""} px-4 py-2 text-xs md:hover:bg-[#1C4BA9] md:hover:text-white`}
+        className={` ${selectedCategory.includes(category.id) ? "bg-black text-white" : ""} px-4 py-2 text-xs  md:hover:bg-[#1C4BA9] md:hover:text-white`}
 
           onClick={() => selectedCategoryHandler(category.id)}
 
