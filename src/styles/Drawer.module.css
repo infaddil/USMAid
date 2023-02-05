@@ -1,24 +1,27 @@
-.openSlideAnimation {
-  animation: 0.2s ease-out slideFromRight;
-}
-@keyframes slideFromRight {
-  0% {
-    transform: translateX(100%);
-  }
 
-  100% {
-    transform: translateX(0%);
+@media screen and (max-width: 768) {
+  .openSlideAnimation {
+    animation: 0.2s ease-out slideFromRight;
   }
-}
-.closeSlideAnimation {
-  animation: 0.2s ease-out slideFromLeft;
-}
-@keyframes slideFromLeft {
-  0% {
-    transform: translateX(0%);
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
   }
-
-  100% {
-    transform: translateX(100%);
+  .closeSlideAnimation {
+    animation: 0.2s ease-out slideFromLeft;
+  }
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+    }
   }
 }
