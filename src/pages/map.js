@@ -14,16 +14,18 @@ const map = () => {
   const [openDrawer, setOpenDrawer] = useState(true);
   const [isSearch, setIsSearch] = useState(false);
   const [details, setDetails] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
   return (
     <Layout>
       <div className="flex justify-between w-full  h-screen">
-        <div
-          className={`${
-            !openDrawer ? "w-full cursor-pointer " : "w-full md:w-2/3 lg:w-3/4 cursor-pointer"
+       {<div
+          className={`
+          ${
+            !openDrawer ? "w-full cursor-pointer " : "hidden md:block w-full md:w-2/3 lg:w-3/4 cursor-pointer"
           }`}
         >
-          <MapUI className="map-container">
+          <MapUI className="map-container" setDetails={setDetails}>
             {!details && (
               <MapHeader
                 isSearch={isSearch}
@@ -31,15 +33,18 @@ const map = () => {
                 openDrawer={openDrawer}
                 setOpenDrawer={setOpenDrawer}
                 setLoginModal={setLoginModal}
+                toggle={toggle}
+                setToggle={setToggle}
               />
             )}
             <MapFooter openDrawer={openDrawer} />
           </MapUI>
         </div>
+}
         {locationModal && <LocationModal setLocationModal={setLocationModal} />}
         {loginModal && <LoginModal setLoginModal={setLoginModal} />}
         {openDrawer && (
-          <div className="hidden md:block w-1/3 lg:w-1/4">
+          <div className={` md:block md:w-1/3 lg:w-1/4`}>
             <RightSideDrawer
               isSearch={isSearch}
               setIsSearch={setIsSearch}
