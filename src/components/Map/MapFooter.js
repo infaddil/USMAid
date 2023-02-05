@@ -18,7 +18,7 @@ const MapFooter = ({ openDrawer }) => {
         </Button>
       </div>
       <div className="absolute right-8 bottom-12 sm:bottom-16 md:bottom-1">
-        <Button className="shadow-2xl bg-white p-1 px-2 rounded-full">
+        <Button className="shadow-2xl bg-white p-1 px-2 h-8 w-8 md:w-12 md:h-12 rounded-full">
           <i className="fa-solid fa-location-arrow text-lg md:text-2xl text-center"></i>
         </Button>
       </div>

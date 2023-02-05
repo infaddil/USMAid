@@ -3,7 +3,7 @@ import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api";
 import React from "react";
 import marker from "../../assets/images/icon-help-cadbury.png";
 
-const MapUI = ({ className, children, setDetails }) => {
+const MapUI = ({ className, children, setDetails, setOpenDrawer,openDrawer }) => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyBPqAkXpoMXnqpkhQiBXImC5EB8R-Cgli8",
   });
@@ -23,7 +23,7 @@ const MapUI = ({ className, children, setDetails }) => {
             scaledSize: new window.google.maps.Size(70, 70),
           },
         }}
-        onClick={ () => setDetails(true)}
+        onClick={ () => {setDetails(true), setOpenDrawer(!openDrawer) }}
       />
       {children}
     </GoogleMap>

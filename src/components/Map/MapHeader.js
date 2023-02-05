@@ -45,7 +45,7 @@ const MapHeader = ({
             className={`${
               isSearch ? "bg-black text-white" : "bg-white text-black"
             } shadow-2xl w-fit px-4 py-1.5 text-sm font-extrabold gap-x-2 `}
-            onClick={() => setIsSearch(!isSearch)}
+            onClick={() => {setIsSearch(!isSearch), setOpenDrawer(!openDrawer)}}
           >
             <i
               className={`fa-sharp fa-solid fa-sort text-sm sm:text-lg ${

@@ -1,10 +1,17 @@
+import BottomArrowIcon from "@/assets/icons/BottomArrowIcon";
 import React, { useState } from "react";
 import Button from "./Button";
 
-const Input = () => {
+const Input = ({setOpenDrawer}) => {
   const [selectSearchType, setSearchType] = useState(false);
   return (
-    <div className="px-3 xl:px-7 py-6">
+    <div className="px-3 xl:px-7 py-1 md:py-6">
+              <Button
+          className="md:hidden bg-white text-xl justify-center  text-white h-12 w-12 shadow-lg mb-6"
+          onClick={() => setOpenDrawer(false)}
+        >
+          <BottomArrowIcon className="text-white flex justify-center items-center w-7 h-7 p-1 border rounded-full bg-black text-sm " />
+        </Button>
       <div className="relative">
         <div
           className="absolute top-2.5 left-3 flex  items-center gap-x-1 cursor-pointer"

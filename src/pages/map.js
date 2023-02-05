@@ -25,7 +25,7 @@ const map = () => {
             !openDrawer ? "w-full cursor-pointer " : "hidden md:block w-full md:w-2/3 lg:w-3/4 cursor-pointer"
           }`}
         >
-          <MapUI className="map-container" setDetails={setDetails}>
+          <MapUI className="map-container" setDetails={setDetails} setOpenDrawer={setOpenDrawer} openDrawer={openDrawer}>
             {!details && (
               <MapHeader
                 isSearch={isSearch}
@@ -48,6 +48,7 @@ const map = () => {
               setIsSearch={setIsSearch}
               details={details}
               openDrawer={openDrawer}
+              setOpenDrawer={setOpenDrawer}
               setDetails={setDetails}
               setLoginModal={setLoginModal}
             />
