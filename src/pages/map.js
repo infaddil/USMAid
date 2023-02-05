@@ -11,7 +11,7 @@ import styles from "../styles/Drawer.module.css";
 const map = () => {
   const [locationModal, setLocationModal] = useState(true);
   const [loginModal, setLoginModal] = useState(false);
-  const [openDrawer, setOpenDrawer] = useState(true);
+  const [openDrawer, setOpenDrawer] = useState(false);
   const [isSearch, setIsSearch] = useState(false);
   const [details, setDetails] = useState(false);
   const [toggle, setToggle] = useState(false);
