@@ -49,7 +49,7 @@ const MapHeader = ({
           >
             <i
               className={`fa-sharp fa-solid fa-sort text-sm sm:text-lg ${
-                isSearch ? "text-white" : "text-black"
+                isSearch ? "text-white dark:text-white" : "text-black"
               }`}
             ></i>
             <span className="hidden sm:block">Search</span>
