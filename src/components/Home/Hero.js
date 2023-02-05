@@ -12,7 +12,7 @@ const Hero = () => {
     <Layout>
       <div className="w-full xl:min-w-[1280px] flex flex-col xl:flex-row xl:justify-between items-center xl:gap-x-2 px-10 md:px-6 xl:px-0 xl:pl-6 py-10 xl:mt-[10px]">
         <div className="flex flex-col gap-y-8">
-          <div className="sm:flex flex-row items-center gap-x-4 xl:mt-[90px]">
+          <div className="sm:flex flex-row items-center xl:mt-[90px]">
             <div className="flex flex-col gap-y-4 ">
               <div className="flex">
                 <span className="text-3xl md:text-4xl xl:text-7xl font-bold">
