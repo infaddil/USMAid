@@ -10,7 +10,7 @@ import img from "../../assets/images/img-no-place.png";
 const List = ({data,setDetails}) => {
   const [isNeedHelp, setIsNeedHelp] = useState(true);
   return (
-    <div className="flex flex-col gap-y-6 mt-6">
+    <div className="flex flex-col gap-y-6 mt-6 relative z-[1]">
       <h1 className="font-extrabold text-lg px-7">Nearby List</h1>
       <div className="flex flex-col gap-y-2 lg:flex-row items-center  gap-x-2 px-3 xl:px-7">
         <Button

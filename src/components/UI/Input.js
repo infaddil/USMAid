@@ -11,7 +11,7 @@ const Input = ({setOpenDrawer}) => {
   })
   const [selectSearchValue, setSelectSearchValue] = useState('Find a Location')
   return (
-    <div className="px-3 xl:px-7 py-1 md:py-6">
+    <div className="px-3 xl:px-7 py-1 md:py-6 ">
               <Button
           className="md:hidden bg-white text-xl justify-center  text-white h-12 w-12 shadow-lg mb-6"
           onClick={() => setOpenDrawer(false)}
@@ -28,7 +28,7 @@ const Input = ({setOpenDrawer}) => {
     
         </div>
         {dropdown && <div>
-          <div className="bg-[#E8E8E8] dark:bg-transparent  w-fit py-4 px-8 absolute top-10 border dark:border-[gray] rounded-[24px] flex flex-col gap-y-2 z-[23]">
+          <div className="bg-[#E8E8E8] dark:bg-transparent  w-fit py-4 px-8 absolute top-10 border dark:border-[gray] rounded-[24px] flex flex-col gap-y-2 z-[222]">
             <div className="flex gap-x-2 justify-start items-center dark:bg-[#292929]  hover:bg-[#F1F2F4] py-1 px-4 text-sm  rounded-[0px] w-full cursor-pointer" onClick={()=> {setDropdown(false), setSelectSearch({location:true}), setSelectSearchValue("Find a Location")}}>
             <div className="w-6 h-6 flex justify-center items-center  border-[1px] border-[#d9ddd2] rounded-full">
                {selectSearch.location && <i class="fa-sharp fa-solid fa-circle-check text-2xl"></i>}
