@@ -7,8 +7,8 @@ import Donation from "./Donation";
 const Support = () => {
   const [donationMethod, setDonationMethod] = useState(false);
   return (
-    <>
-      <div className="w-full  xl:min-w-[1280px] flex justify-between px-6 py-10 ">
+    <div className="transition-fade	">
+      <div className="w-full   xl:min-w-[1280px] flex justify-between px-6 py-10 ">
         <span className="font-bold text-lg">Support kitajaga.co</span>
         <Link href={"/"}>
           <Button className="bg-[#1C4BA9] text-xl justify-center text-white h-10 w-10 shadow-lg">
@@ -49,7 +49,7 @@ const Support = () => {
       ) : (
         <Donation />
       )}
-    </>
+    </div>
   );
 };
 

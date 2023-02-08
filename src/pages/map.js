@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "@/components/Layout/Layout";
 import LocationModal from "@/components/UI/LocationModal";
 import MapHeader from "@/components/Map/MapHeader";
@@ -8,12 +8,22 @@ import MapUI from "@/components/UI/MapUI";
 import LoginModal from "@/components/UI/LoginModal";
 
 const map = () => {
+
+
+
   const [locationModal, setLocationModal] = useState(true);
   const [loginModal, setLoginModal] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [isSearch, setIsSearch] = useState(false);
   const [details, setDetails] = useState(false);
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const windowWidth = window.innerWidth;
+      if(windowWidth > 786) setOpenDrawer(true);
+     }
+  },[])
+ 
   return (
     <Layout>
       <div className="flex justify-between w-full  h-screen">

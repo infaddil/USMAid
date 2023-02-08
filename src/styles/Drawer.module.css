@@ -1,8 +1,8 @@
-/* .openSlideAnimation {
+.openSlideAnimation {
   animation: 0.2s ease-out slideFromRight;
 }
 .onCloseAnimation {
-  animation: 0.2s ease-out slideFromLeft;
+  animation: 0.2s ease-in  slideFromLeft;
 }
 @keyframes slideFromRight {
   0% {
@@ -16,11 +16,11 @@
 
 @keyframes slideFromLeft {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 
   100% {
     transform: translateX(100%);
   }
 }
- */
+
