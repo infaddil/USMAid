@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import List from "../Map/List";
 import ListDetails from "../Map/ListDetails";
 import Search from "../Map/Search";
@@ -28,10 +28,17 @@ const DUMMY_DATA = [
 ];
 
 const RightSideDrawer = ({ isSearch, setIsSearch, details, setDetails, setLoginModal, openDrawer,setOpenDrawer }) => {
+  const [animation, setAnimation] = useState(false)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const windowWidth = window.innerWidth;
+      if(windowWidth > 786) setAnimation(true);
+     }
+  },[])
   
   return (
     
-    <div className={`${openDrawer && `${styles.openSlideAnimation}`}  absolute right-0 top-0 py-4 w-full dark:bg-[#292929]  md:w-1/3 lg:w-1/4 h-screen overflow-x-scroll`}>
+    <div className={`${openDrawer && animation && `${styles.openSlideAnimation}`}  absolute right-0 top-0 py-4 w-full dark:bg-[#292929]  md:w-1/3 lg:w-1/4 h-screen overflow-x-scroll`}>
       <div>
       {!isSearch && !details && <Input setOpenDrawer={setOpenDrawer} />}
       {!isSearch && !details && (
