@@ -7,7 +7,7 @@ import Button from "../UI/Button";
 const ListItem = ({ data,setDetails }) => {
   return (
     <div
-      className="flex flex-col gap-y-2 dark:hover:bg-[#292929] hover:bg-[#F1F2F4] cursor-pointer px-7 py-4"
+      className="flex flex-col gap-y-2  hover:bg-[#F1F2F4] cursor-pointer px-7 py-4"
       onClick={() => setDetails(true)}
     >
       <div className="flex gap-x-1 justify-between items-center font-extrabold text-xs text-[#D55161]">

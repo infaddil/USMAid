@@ -4,7 +4,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div className='transition-fade'>
+    <div className='transition-fade dark:bg-white dark:text-black'>
     <Navbar />
     <Hero />
     </div>

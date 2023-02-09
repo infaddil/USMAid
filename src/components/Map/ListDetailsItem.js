@@ -14,7 +14,7 @@ const ListDetailsItem = ({ data,setLoginModal }) => {
             <i className="fa-solid fa-location-dot text-lg text-center "></i>
           </Button>
         </div>
-        <div className="bg-gray-100 dark:bg-[#292929] p-1.5 rounded-[4px]">
+        <div className="bg-gray-100  p-1.5 rounded-[4px]">
           <span className="text-sm">{data.address}</span>
         </div>
         <span className="font-bold text-lg">{data.name}</span>
@@ -54,7 +54,7 @@ const ListDetailsItem = ({ data,setLoginModal }) => {
           <span className="text-sm font-bold ">
             You need to log in first to see the user information of this flag.
           </span>
-          <Button className="bg-black dark:hover:border-1 text-white w-full p-2.5 px-2 rounded-full mb-32" onClick={() => setLoginModal(true)}>
+          <Button className="bg-black  text-white w-full p-2.5 px-2 rounded-full mb-32" onClick={() => setLoginModal(true)}>
             Login
           </Button>
         </div>

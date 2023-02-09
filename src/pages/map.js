@@ -30,7 +30,7 @@ const map = () => {
        {<div
           className={`
           ${
-            !openDrawer ? "w-full cursor-pointer " : "hidden md:block w-full md:w-2/3 lg:w-3/4 cursor-pointer"
+            !openDrawer ? "w-full transition-all cursor-pointer " : "hidden md:block w-full md:w-2/3 lg:w-3/4 cursor-pointer"
           }`}
         >
           <MapUI className="map-container" setDetails={setDetails} setOpenDrawer={setOpenDrawer} openDrawer={openDrawer}>

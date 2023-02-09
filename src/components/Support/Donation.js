@@ -4,7 +4,8 @@ import Button from "../UI/Button";
 
 const Donation = () => {
   return (
-    <div className="flex flex-col gap-y-6 justify-center items-center mt-[20px] md:mt-[100px]">
+    <div className="flex flex-col gap-y-6 justify-center items-center mt-[20px] md:mt-[100px] transition-fade dark:transition-fade-dark 
+    dark:bg-white dark:text-black">
       <span className="text-lg font-semibold">Select Donation Method</span>
       <Button className="bg-black hover:bg-[#1C4BA9] text-white py-3 px-7 text-base w-[320px] justify-center">
         Support us on GlobalSadaqah

@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {children}
-      <div className="w-full fixed bottom-0 p-2 bg-white dark:bg-[#292929] shadow-sm ">
+      <div className="w-full fixed bottom-0 p-2 bg-white  shadow-sm ">
         <div className="flex flex-col gap-y-2 md:flex-row justify-between px-2">
           <div className="flex gap-x-2">
             <Link href="/support">

@@ -7,8 +7,8 @@ import flag2 from "../../assets/images/icon-helper-cadbury.png"
 
 const LocationModal = ({setLocationModal}) => {
   return (
-    <div className="w-full h-screen flex justify-center items-center dark:bg-[#292929] bg-black bg-opacity-50 absolute z-[22]">
-      <div className="flex flex-col gap-y-6 justify-center items-center dark:border-none dark:shadow-none border rounded-[32px] dark:bg-[#292929] w-[440px] bg-white px-8 py-7 shadow-lg">
+    <div className="w-full h-screen flex justify-center items-center  bg-black bg-opacity-50 absolute z-[22] dark:text-black">
+      <div className="flex flex-col gap-y-6 justify-center items-center  border rounded-[32px] ] w-[440px] bg-white px-8 py-7 shadow-lg">
         <div className="flex">
           <div>
             <Image
@@ -36,7 +36,7 @@ const LocationModal = ({setLocationModal}) => {
         <Link href={"#"} className="text-[#39005F] font-extrabold dark:text-[#8DA5B4] underline text-sm">
           Click here for a tutorial on how to enable location
         </Link>
-        <Button className="border-[#cccccc] w-full py-3 dark:bg-[#292929] dark:hover:bg-[#292929] hover:bg-black hover:text-white" onClick={() => setLocationModal(false)}>I agree</Button>
+        <Button className="border-[#cccccc] w-full py-3 hover:bg-black hover:text-white" onClick={() => setLocationModal(false)}>I agree</Button>
       </div>
     </div>
   );

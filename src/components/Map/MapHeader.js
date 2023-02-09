@@ -26,11 +26,11 @@ const MapHeader = ({
                   className="hidden sm:block"
                 />
               </div>
-              <span> kitajaga campaign</span>
+              <span className="dark:text-black"> kitajaga campaign</span>
             </div>
           </Button>
           <Button
-            className="bg-white shadow-2xl w-fit px-3 lg:px-4 py-1.5 text-xs lg:text-sm font-extrabold gap-x-2"
+            className="bg-white shadow-2xl w-fit px-3 lg:px-4 py-1.5 text-xs lg:text-sm font-extrabold gap-x-2 dark:text-black"
             onClick={() => setLoginModal(true)}
           >
             <i className="fa fa-user text-sm sm:text-lg" aria-hidden="true"></i>
@@ -49,7 +49,7 @@ const MapHeader = ({
           >
             <i
               className={`fa-sharp fa-solid fa-sort text-sm sm:text-lg ${
-                isSearch ? "text-white dark:text-white" : ""
+                isSearch ? "text-white " : ""
               }`}
             ></i>
             <span className="hidden sm:block">Search</span>
