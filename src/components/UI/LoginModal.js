@@ -1,7 +1,7 @@
+import React, { useState } from "react"; // Import useState here
 import BottomArrowIcon from "@/assets/icons/BottomArrowIcon";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import Button from "./Button";
 import 'text-encoding';
 import axios from 'axios';
@@ -24,13 +24,6 @@ const LoginModal = ({ setLoginModal }) => {
 
       <div className="flex flex-col gap-y-2 md:gap-y-3 border rounded-[32px]  w-full md:max-w-[368px] mx-4 md:mx-0  bg-white px-4 py-5 md:px-8 md:py-10 shadow-lg relative top-24 md:left-6">
         <div className="flex justify-end">
-        <input
-      type="text"
-      placeholder="6013231321"
-      value={phoneNumber}
-      onChange={(e) => setPhoneNumber(e.target.value)}
-      className="border rounded-full py-2 px-2 md:py-3 md:px-4 dark:bg-white   outline-[#1c4ba9] w-full"
-    />
           <Button
             className="bg-white text-xl justify-end  text-white h-12 w-12 shadow-lg"
             onClick={() => setLoginModal(false)}

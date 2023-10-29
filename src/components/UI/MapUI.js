@@ -1,14 +1,28 @@
 import BottomArrowIcon from "@/assets/icons/BottomArrowIcon";
-import { useLoadScript, GoogleMap, MarkerF } from "@react-google-maps/api";
+import { useLoadScript, GoogleMap, MarkerF, Circle } from "@react-google-maps/api";
 import React from "react";
 import marker from "../../assets/images/icon-help-cadbury.png";
 
-const usmBounds = {
-  north: 7.3570,
-  south: 5.3415,
-  east: 80.0035,
-  west: 100.2880
+const center = { lat: 5.3532, lng: 100.2979 }; // DTSP USM location
+
+// Function to calculate bounds for a 5km radius around the center
+const getBounds = (center, radius) => {
+  const latRadian = center.lat * (Math.PI / 180);
+
+  const degLatKm = 110.574235;
+  const degLongKm = 110.572833 * Math.cos(latRadian);
+  const deltaLat = radius / degLatKm;
+  const deltaLong = radius / degLongKm;
+
+  return {
+    north: center.lat + deltaLat,
+    south: center.lat - deltaLat,
+    east: center.lng + deltaLong,
+    west: center.lng - deltaLong,
+  };
 };
+
+const bounds = getBounds(center, 2000); // 5km radius
 
 const MapUI = ({ className, children, setDetails, setOpenDrawer, openDrawer }) => {
   const { isLoaded } = useLoadScript({
@@ -18,15 +32,15 @@ const MapUI = ({ className, children, setDetails, setOpenDrawer, openDrawer }) =
   return (
     <GoogleMap
       zoom={15}
-      center={{ lat: 5.3532, lng: 100.2979 }} // Updated center coordinates for DTSP USM
+      center={center}
       mapContainerClassName={className}
-      options={{ 
+      options={{
         disableDefaultUI: true,
-        restriction: { latLngBounds: usmBounds, strictBounds: true } // USM bounds
+        restriction: { latLngBounds: bounds, strictBounds: true },
       }}
     >
       <MarkerF
-        position={{ lat: 5.3532, lng: 100.2979 }} // Marker position for DTSP USM
+        position={center} // Marker position for DTSP USM
         options={{
           icon: {
             url: "https://terato-space.sgp1.digitaloceanspaces.com/kitajaga/img/icon-help-cadbury.png",
@@ -37,6 +51,17 @@ const MapUI = ({ className, children, setDetails, setOpenDrawer, openDrawer }) =
       >
         {children}
       </MarkerF>
+      <Circle // Circle component to visualize the 5km radius
+        center={center}
+        radius={2000} // 5km in meters
+        options={{
+          strokeColor: "#FF0000",
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: "#FF0000",
+          fillOpacity: 0.15,
+        }}
+      />
     </GoogleMap>
   );
 };
